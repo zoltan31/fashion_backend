@@ -18,3 +18,7 @@ class Cloth(models.Model):
     class Meta:
         ordering = ['created']
 
+class Season(models.Model):
+  name = models.TextField()
+  start_date = models.DateTimeField()
+  active = models.BooleanField()
