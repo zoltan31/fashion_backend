@@ -9,7 +9,7 @@ class User(models.Model):
 
 class Cloth(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    name = models.ForeignKey(User, on_delete=models.CASCADE)
+    name = models.TextField()
     #TODO: Set up the correct PATH
     image = models.ImageField(upload_to='media/images/')
     date_of_purchase = models.DateTimeField()
