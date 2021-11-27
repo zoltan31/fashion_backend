@@ -9,4 +9,4 @@ class UserSerializer(serializers.ModelSerializer):
 class ClothSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cloth
-        fields = ['id', 'name', 'date_of_purchase', 'style', 'type']
+        fields = ['id', 'name', 'date_of_purchase', 'style', 'type', 'image']
