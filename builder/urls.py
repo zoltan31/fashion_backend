@@ -17,18 +17,6 @@ urlpatterns = format_suffix_patterns(urlpatterns)
 
 style_list = ['retro', 'hypebeast', 'goth', 'smart-casual', 'alt', 'vintage', 'exotic', 'bohemian', 'sporty', 'military']
 
-# def add_seasons():
-#   new_seasons = []
-#   seasons = Season.objects.all()
-#   if len(seasons) == 0:
-#     for style in style_list:
-#       season = Season(name=style, start_date=timezone.datetime.now(), active=False)
-#       new_seasons.append(season)
-#     random_season = random.choice(new_seasons)
-#     random_season.active = True
-
-#     for season in new_seasons:
-#       season.save()
 
 def check_season():
   seasons = Season.objects.all()
